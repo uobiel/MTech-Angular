@@ -8,8 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /MTech-Angular/"
   },
   "private": true,
   "dependencies": {
