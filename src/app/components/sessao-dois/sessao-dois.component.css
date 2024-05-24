@@ -1,0 +1,54 @@
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.fade {
+    width: 80%;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 1s;
+}
+
+.imagem {
+    width: 93%;
+    max-width: 900px;
+    height: 90%;
+    border-radius: 8px;
+    background-image: url('../../../../public/img/vendas.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .fade {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .fade {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        height: 300px;
+        align-items: center;
+    }
+
+    .fade {
+        height: 50%;
+    }
+}

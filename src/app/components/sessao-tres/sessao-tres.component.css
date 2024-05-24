@@ -1,0 +1,97 @@
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quebra-linha {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+p {
+    color: white;
+    font-size: 50px;
+    transition: 1s;
+}
+
+#icone1, #icone2 {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+#icone1 {
+    background-image: url('../../../../public/img/grafico-de-pizza.png');
+}
+
+#icone2 {
+    background-image: url('../../../../public/img/grafico-de-barras.png');
+}
+
+#imagem1, #imagem2 {
+    width: 37%;
+    max-width: 600px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#imagem1 {
+    background-image: url('../../../../public/img/Agenda.jpg');
+}
+
+#imagem2 {
+    background-image: url('../../../../public/img/movimento.jpg');
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 30px;
+    }
+
+    #icone1, #icone2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #imagem1, #imagem2 {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .linha {
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .quebra-linha {
+        width: 100%;
+    }
+
+    #imagem1, #imagem2{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
