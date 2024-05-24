@@ -1,7 +1,7 @@
 {
   "name": "mtech",
   "version": "0.0.0",
-  "homepage": "https:uobiel.github.io/MTech-Angular",
+  "homepage": "https://uobiel.github.io/MTech-Angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
