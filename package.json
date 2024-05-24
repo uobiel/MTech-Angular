@@ -1,12 +1,15 @@
 {
   "name": "mtech",
   "version": "0.0.0",
+  "homepage": "https:uobiel.github.io/MTech-Angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +21,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "gh-pages": "^6.1.1",
     "rxjs": "~7.8.0",
     "scrollreveal": "^4.0.9",
     "tslib": "^2.3.0",
