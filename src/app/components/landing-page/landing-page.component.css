@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    color: #383838;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header  p {
+    color: white;
+    font-size: 30px;
+}
+
+header .menus {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header  a:hover {
+    border-bottom: 1px solid #bfaff2;
+}
+
+header button {
+    padding: 8px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #F8D57E;
+    border: none;
+    cursor: pointer;
+}
+
+header  button:hover {
+    transition: 0.4s;
+    transform: scale(1.09);
+}
+
+@media screen and (max-width: 600px) {
+    header .menus {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        z-index: 1;
+    }
+}
+
+/* sessão um */
+
+#sessao-um {
+    width: 100%;
+    height: 100vh;
+    max-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+#sessao-um h1 {
+    transition: 1s;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#sessao-um  h2 {
+    transition: 1s;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.726); 
+    margin-bottom: 20px;
+}
+
+#sessao-um button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #f8d57e;
+}
+
+#sessao-um button:hover {
+    transform: scale(1.02);
+    background-color: #f8d67ed8;
+}
+
+#sessao-um .left {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+#sessao-um .rigth {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#sessao-um .fade {
+    width: 400px;
+    height: 400px;
+    background-color: #4b7790;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sessao-um .imagem {
+    width: 90%;
+    height: 90%;
+    background-image: url('../../../../public/img/Screenshot.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    #sessao-um .left {
+        margin-left: 40px;
+    }
+
+    #sessao-um h1 {
+        font-size: 40px;
+    }
+
+    #sessao-um h2 {
+        font-size: 20px;
+    }
+
+    #sessao-um .fade {
+        transition: 1s;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sessao-um {
+        flex-wrap: wrap;
+    }
+
+    #sessao-um .left {
+        width: 100%;
+        height: 250px;
+    }
+
+    #sessao-um .rigth {
+        width: 100%;
+    }
+
+    #sessao-um h1 {
+        font-size: 30px;
+    }
+
+    #sessao-um h2 {
+        font-size: 15px;
+    }
+}
+
+/* sessão dois */
+
+#sessao-dois {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+#sessao-dois .fade {
+    width: 80%;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #4b7790;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 1s;
+}
+
+#sessao-dois .imagem {
+    width: 93%;
+    max-width: 900px;
+    height: 90%;
+    border-radius: 8px;
+    background-image: url('../../../../public/img/vendas.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    #sessao-dois .fade {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sessao-dois .fade {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sessao-dois {
+        height: 300px;
+        align-items: center;
+    }
+
+    #sessao-dois .fade {
+        height: 50%;
+    }
+}
+
+/* sessão três */
+
+#sessao-tres {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#sessao-tres .linha {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sessao-tres .quebra-linha {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+#sessao-tres p {
+    color: white;
+    font-size: 50px;
+    transition: 1s;
+}
+
+#sessao-tres #icone1, #sessao-tres #icone2 {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+#sessao-tres #icone1 {
+    background-image: url('../../../../public/img/grafico-de-pizza.png');
+}
+
+#sessao-tres #icone2 {
+    background-image: url('../../../../public/img/grafico-de-barras.png');
+}
+
+#sessao-tres #imagem1, #sessao-tres #imagem2 {
+    width: 37%;
+    max-width: 600px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#sessao-tres #imagem1 {
+    background-image: url('../../../../public/img/Agenda.jpg');
+}
+
+#sessao-tres #imagem2 {
+    background-image: url('../../../../public/img/movimento.jpg');
+}
+
+@media screen and (max-width: 1000px) {
+    #sessao-tres p {
+        font-size: 30px;
+    }
+
+    #sessao-tres #icone1, #sessao-tres #icone2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #sessao-tres #imagem1, #sessao-tres #imagem2 {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sessao-tres .linha {
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    #sessao-tres p {
+        font-size: 25px;
+    }
+
+    #sessao-tres .quebra-linha {
+        width: 100%;
+    }
+
+    #sessao-tres #imagem1, #sessao-tres #imagem2{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* sessão cinco */
+
+#sessao-quatro {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sessao-quatro .container {
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sessao-quatro .ico {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sessao-quatro .ico1{
+    background-image: url('../../../../public/img/Coin\ icon.png');
+} 
+
+#sessao-quatro .ico2{
+    background-image: url('../../../../public/img/gerenciamento-de-equipe.png');
+
+} 
+
+#sessao-quatro .ico3{
+    background-image: url('../../../../public/img/taxa.png');
+
+}
+
+#sessao-quatro .text1 {
+    color: #f2f1f1;
+    margin: 10px 0px 10px 0px;
+}
+
+#sessao-quatro .text2 {
+    color: #f2f1f1b4;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #sessao-quatro .ico {
+        width: 35px;
+        height: 35px;
+    }
+
+    #sessao-quatro .text1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #sessao-quatro .text2 {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* sessão cinco */
+
+#sociais {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b7790;
+    color: white;
+}
+
+#sociais .contact-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0px 20px 0px;  
+}
+
+#sociais .ico {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#sociais .ico:hover {
+    transform: scale(1.09);
+}
+
+#sociais .ico1 {
+    background-image: url('../../../../public/img/whatsapp.svg');
+}
+
+#sociais .ico2 {
+    background-image: url('../../../../public/img/insta.svg');
+}
+
+#sociais .ico3 {
+    background-image: url('../../../../public/img/email.svg');
+}
+
+#sociais #email{
+    width: 310px;
+    margin: 20px 0px 20px 0px;  
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#sociais button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4b7790;
+    border: 1px solid #6e9ab3;
+    color: white;
+    cursor: pointer;
+}
+
+#sociais button:hover {
+    transform: scale(1.05);
+}
