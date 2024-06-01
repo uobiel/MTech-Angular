@@ -1,13 +1,24 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-    background-color: #2b2b2b;
+    background-color: #52809b;
 }
 
-button {
-    color: white;
+/* Cor de fundo da barra de rolagem inteira */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Cor do fundo do "track" da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #4b7790;
+}
+
+/* Cor do "thumb" da barra de rolagem (a parte que se move) */
+::-webkit-scrollbar-thumb {
+    background: #264658;
+    border-radius: 8px;
+}
+
+/* Cor do "thumb" ao passar o mouse por cima */
+::-webkit-scrollbar-thumb:hover {
+    background: #264658;
 }
